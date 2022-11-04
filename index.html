@@ -12,6 +12,9 @@
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/83b6b827e0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -29,16 +32,16 @@
                         <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Service</a>
+                        <a href="#service" class="nav-link">Service</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About Me</a>
+                        <a href="#about" class="nav-link">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">My Work</a>
+                        <a href="#gallary" class="nav-link">My Work</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contract Me</a>
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal">Contract Me</a>
                     </li>
                 </ul>
             </div>
@@ -98,7 +101,7 @@
     </section>
 
     <!-- Service Section -->
-    <section id="section" class="py-5">
+    <section id="service" class="py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center mb-4">
@@ -111,7 +114,7 @@
                 </div>
                 <div class="col-md-4 text-center mb-4">
                     <i class="fa-solid fa-atom fa-3x mb-2"></i>
-                    <h3>Alain</h3>
+                    <h3>Alien</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
                         sed?
@@ -143,6 +146,76 @@
             </div>
         </div>
     </section>
+
+    <!-- gallary -->
+    <section id="gallary" class="p-5">
+        <div class="container">
+            <h1 class="text-center">My Work</h1>
+            <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, quisquam!</p>
+            <!-- Image -->
+            <div class="row md-4">
+                <div class="col-md-4">
+                    <img src="https://cdn.pixabay.com/photo/2017/02/11/10/33/spaceship-2057420__480.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://cdn.pixabay.com/photo/2018/03/26/14/07/space-3262811__480.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://cdn.pixabay.com/photo/2015/03/26/18/36/spacex-693229_1280.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://cdn.pixabay.com/photo/2017/10/13/14/15/fantasy-2847724__480.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://cdn.pixabay.com/photo/2017/04/24/15/25/robot-2256814__480.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://cdn.pixabay.com/photo/2017/06/17/22/55/ufo-2413965__480.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="text-center p-4">
+        <div class="row">
+            <div class="col">
+                <p>Copyright &copy; Inw official 2022</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contract Me</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form >
+                        <div class="form-group">
+                            <label>e-mail</label>
+                            <input type="email" placeholder="Input Your e-mail" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Topic</label>
+                            <input type="text" placeholder="Input Your Topic" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Details</label>
+                            <textarea id="" cols="30" rows="10" class="form-control"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button class="btn btn-success">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
